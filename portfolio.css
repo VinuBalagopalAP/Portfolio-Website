@@ -1,36 +1,31 @@
 @charset "utf-8";
 /* CSS Document */
-body{
-
-	overflow-x: hidden;
-	overflow-y: hidden;
-	margin:0px;
-	padding:0px;
-	color:#16EDF1FD;
-	font-family: sans-serif;	
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0px;
+  padding: 0px;
+  color: #16edf1fd;
+  font-family: sans-serif;
+  background-color: #f8f8f8;
 }
-ul{
-	list-style:none;
+ul {
+  list-style: none;
 }
-a{
-	text-decoration:none;
-}
-#main{
-	padding:30px 50px;
-	position:relative;
-	width:100%;
-	height: 100vh;
-	box-sizing: border-box;
-	background-size: 1330px;
-	background-position: right bottom;
-	background-repeat: no-repeat;
-	background-color: #edf1fd;
+a {
+  text-decoration: none;
 }
 
-.bg-img{
-
-	background-image: url("Images/background.png");
-
+#main {
+  padding: 30px 50px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-size: 1330px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: #edf1fd;
 }
 
 /*
@@ -53,70 +48,69 @@ nav{
 	z-index: 1;
 }*/
 
-.menu{
-	display: flex;
+.menu {
+  display: flex;
 }
-.menu li a{
-	padding: 10px 15px;
-	color:#6c707c;
-	font-size: 12px;
-	
+.menu li a {
+  padding: 10px 15px;
+  color: #6c707c;
+  font-size: 12px;
 }
-.lang{
-	color:#292929;
+.lang {
+  color: #292929;
 }
-.logo{
-	font-size: 25px;
-	font-weight: bold;
-	color:#292929;
-	font-family:Poppins;
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #292929;
+  font-family: Poppins;
 }
-.toggle{
-	display: none;
+.toggle {
+  display: none;
 }
 .active a,
-.menu li a:hover{
-	background-color:#292929;
-	color:#FFF!important;
-	font-weight: bold;
-	transition: all ease 0.4s;
+.menu li a:hover {
+  background-color: #292929;
+  color: #fff !important;
+  font-weight: bold;
+  transition: all ease 0.4s;
 }
-.name{
-
-	width: 500px;
-	position: fixed;
-	left: 20%;
-	top: 50%;
-	transform: translate(-20%,-50%);
-	font-family: 'Rancho', cursive;
-}
-
-.name p:nth-child(1),.name .details{
-	color:#6c707c;
-	font-size: 16px;
+.name {
+  width: 500px;
+  position: fixed;
+  left: 20%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+  font-family: "Rancho", cursive;
 }
 
-.name h1{
-	font-family: 'Rancho', cursive;
-	font-size: 40px;
-	margin:0px;
-	letter-spacing: 3px;
-	color:#292929;
+.name p:nth-child(1),
+.name .details {
+  color: #6c707c;
+  font-size: 16px;
 }
 
-.btn{
-	width:200px;
-	height: 45px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #292929;
-	color:#FFFFFF;
+.name h1 {
+  font-family: "Rancho", cursive;
+  font-size: 40px;
+  margin: 0px;
+  letter-spacing: 3px;
+  color: #292929;
 }
 
-.btn:hover{
-	background-color: #131313;
-	transition: all ease 0.5s;
+.btn {
+  width: 200px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292929;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #131313;
+  transition: all ease 0.5s;
 }
 
 /*
@@ -143,59 +137,51 @@ nav{
   bottom: -2px;
 }*/
 
-.social{
-	position: absolute;
-	left: 50px;
-	bottom: 50px;
-	display: flex;
-
+.social {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  display: flex;
 }
 
-.social a{
-	margin: 6px 12px;
-
+.social a {
+  margin: 6px 12px;
 }
 
-.social i{
-	color:rgba(18,17,17,0.40);
-	font-size: 14px;
+.social i {
+  color: rgba(18, 17, 17, 0.4);
+  font-size: 14px;
 }
 
-.social a:hover i{
-	color:#1723d1;
-	transition: all ease 0.5s;
+.social a:hover i {
+  color: #1723d1;
+  transition: all ease 0.5s;
 }
 
-
-@media(max-width:1190px)
-{
-	#main{
-		background-size: 1150px !important;
-		
-	}
-	.name{
-		left: 10%;
-		top: 50%;
-		transform: translate(-10%,-50%);
-	}
-	.bg-img img{
-		height:400px;
-	}
+@media (max-width: 1190px) {
+  #main {
+    background-size: 1150px !important;
+  }
+  .name {
+    left: 10%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+  }
+  .bg-img img {
+    height: 400px;
+  }
 }
 
-@media(max-width:970px)
-{
-	#main{
-		background-image: none !important;
-		
-	}
-	.name{
-		left: center;
-		top: center;
-		transform: translate(-50%,-50%);
-		
-	}
-	.about-model{
-		display: none;
-	}
+@media (max-width: 970px) {
+  #main {
+    background-image: none !important;
+  }
+  .name {
+    left: center;
+    top: center;
+    transform: translate(-50%, -50%);
+  }
+  .about-model {
+    display: none;
+  }
 }
