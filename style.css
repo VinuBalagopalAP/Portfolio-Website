@@ -1,4 +1,6 @@
 body {
+  overflow-x: hidden;
+   ioverflow-y: hidden;
   margin: 0;
   padding: 0;
   width: 100%;
